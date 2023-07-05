@@ -1,5 +1,7 @@
 using Package;
 
 void main() {
-    print("hello radearch package manager");
+    Package.Package package = new Package.Package();
+    var pkg = package.getArchPackage("pacman");
+    stdout.printf("package name = %s",pkg);
 }
